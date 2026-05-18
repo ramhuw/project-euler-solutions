@@ -1,0 +1,35 @@
+cabal-version: 3.0
+name: euler-haskell
+version: 0.1.0.0
+license: BSD-3-Clause
+license-file: LICENSE
+author: ramhuw
+maintainer: johndoubleb@gmail.com
+build-type: Simple
+extra-doc-files: CHANGELOG.md
+
+common warnings
+  ghc-options: -Wall
+
+executable euler-haskell
+  import: warnings
+  main-is: Main.hs
+  other-modules:
+    P001
+    P002
+    P003
+    P004
+    P005
+    P006
+    P007
+    P008
+    P009
+    P010
+
+  build-depends:
+    primes,
+    base,
+    primes,
+
+  hs-source-dirs: app
+  default-language: GHC2021
